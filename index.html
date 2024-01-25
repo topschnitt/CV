@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+    <style>
+    body {
+  margin: 0;
+  padding: 0px 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Updated grid template columns */
+  background-color: #fff; /* Add a background color to make it stand out */
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for separation */
+}
+
+.logo {
+  padding: 5px;
+  padding-left: 100px;
+  height: 40px;
+  align-self: left;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end; /* Align the menu to the right */
+  align-items: center; /* Align items vertically in the center */
+  gap: 1px; /* Add some space between menu items */
+}
+
+.menu .button {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px; /* Doubled font size */
+  font-family: 'Verdana', sans-serif;
+  padding: 20px 20px; /* Doubled button size */
+}
+
+.menu .button:hover {
+  color: #fff;
+  background-color: #5694CB;
+}
+
+/* Add a top margin to the body to make space for the fixed menu */
+body {
+  margin-top: 60px; /* Adjust as needed based on your menu height */
+}
+
+/* Add a smooth transition for the fixed menu */
+.menu {
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+  
+  
+ 
+    section {
+      margin-top: 400px; /* Adjust as needed based on your menu height */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px; /* Add some space between the columns */
+      margin-top: 40px; /* Adjust as needed */
+    }
+
+    .left-column {
+      font-family: 'Verdana', sans-serif;
+      margin-left: 120px;
+      color: #5694CB;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons img {
+      width: 48px; /* Adjust the size as needed */
+      height: 48px;
+      border-radius: 50%;
+    }
+
+    .call-to-action-button {
+      padding: 15px 20px;
+      font-size: 18px;
+      background-color: #5694CB;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .call-to-action-button:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .right-column img {
+      max-width: 100%; /* Ensure the image does not exceed its container */
+      height: auto;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+    
+  <div class="container">
+    <div class="logo">
+        <img src="logo - Kopie.png" alt="Your Logo">
+    </div>
+    <div class="buttons menu">
+      <a href="#" class="button">Education</a>
+      <a href="#" class="button">Experience</a>
+      <a href="#" class="button">Projects</a>
+      <a href="#" class="button">Contact</a>
+    </div>
+  </div>
+
+  <section>
+
+  </section>
+
+
+  <section>
+    <div class="left-column">
+      <p style="font-size: 40px;">Alexander Buss</p>
+      <p style="font-size: 20px; font-family: cursive;">topschnitt</p>
+      <p style="font-size: 14px; line-height: 1.5;">I'm a developer, I do things. With great interest<br> I'm introducing myself to do the change management<br>for german <br>Text line 4<br></p>
+      <div class="social-icons">
+        <!-- Replace the placeholder URLs with your actual social media icons -->
+        <img src="Icons\email.png" alt="Social Icon 1">
+        <img src="Icons\github.png" alt="Social Icon 2">
+        <img src="Icons\website.png" alt="Social Icon 3">
+      </div>
+      <button class="call-to-action-button">Call to Action</button>
+    </div>
+    <div class="right-column">
+      <!-- Replace the placeholder URL with the actual path to your image -->
+      <img src="logo.png" alt="Your Image">
+      <br>
+    </div>
+  </section>
+
+
+
+
+  <!-- New Section -->
+  <section>
+    <div class="left-column">
+      <p style="font-size: 40px;">Name</p>
+      <p style="font-size: 20px; font-family: cursive;">Nickname</p>
+      <p style="font-size: 14px; line-height: 1.5;">Text line 1<br>Text line 2<br>Text line 3<br>Text line 4</p>
+      <div class="social-icons">
+        <!-- Replace the placeholder URLs with your actual social media icons -->
+        <img src="path/to/social-icon1.png" alt="Social Icon 1">
+        <img src="path/to/social-icon2.png" alt="Social Icon 2">
+        <img src="path/to/social-icon3.png" alt="Social Icon 3">
+      </div>
+      <button class="call-to-action-button">Call to Action</button>
+    </div>
+    <div class="right-column">
+      <!-- Replace the placeholder URL with the actual path to your image -->
+      <img src="path/to/your/image.jpg" alt="Your Image">
+    </div>
+  </section>
+  
+  
+
+  
+    <section>
+    <div class="left-column">
+      <p style="font-size: 40px;">Name</p>
+      <p style="font-size: 20px; font-family: cursive;">Nickname</p>
+      <p style="font-size: 14px; line-height: 1.5;">Text line 1<br>Text line 2<br>Text line 3<br>Text line 4</p>
+      <div class="social-icons">
+        <!-- Replace the placeholder URLs with your actual social media icons -->
+        <img src="path/to/social-icon1.png" alt="Social Icon 1">
+        <img src="path/to/social-icon2.png" alt="Social Icon 2">
+        <img src="path/to/social-icon3.png" alt="Social Icon 3">
+      </div>
+      <button class="call-to-action-button">Call to Action</button>
+    </div>
+    <div class="right-column">
+      <!-- Replace the placeholder URL with the actual path to your image -->
+      <img src="path/to/your/image.jpg" alt="Your Image">
+    </div>
+  </section>
+  
+</body>
+</html>
