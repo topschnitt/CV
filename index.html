@@ -6,20 +6,16 @@
   
   
     <style>
-    body {
-  margin: 0;
-  padding: 0px 0px;
-  box-sizing: border-box;
-}
+
 
 .container {
   position: fixed;
+  font-family: 'Verdana', sans-serif;
   top: 0;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr; /* Updated grid template columns */
-  background-color: #fff; /* Add a background color to make it stand out */
-  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for separation */
 }
 
 .logo {
@@ -31,8 +27,8 @@
 
 .buttons {
   display: flex;
+  margin-right: 100px;
   justify-content: flex-end; /* Align the menu to the right */
-  align-items: center; /* Align items vertically in the center */
   gap: 1px; /* Add some space between menu items */
 }
 
@@ -49,20 +45,8 @@
   background-color: #5694CB;
 }
 
-/* Add a top margin to the body to make space for the fixed menu */
-body {
-  margin-top: 60px; /* Adjust as needed based on your menu height */
-}
-
-/* Add a smooth transition for the fixed menu */
-.menu {
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-  
-  
- 
-    section {
-      margin-top: 400px; /* Adjust as needed based on your menu height */
+section {
+      font-family: 'Verdana', sans-serif;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px; /* Add some space between the columns */
@@ -70,7 +54,6 @@ body {
     }
 
     .left-column {
-      font-family: 'Verdana', sans-serif;
       margin-left: 120px;
       color: #5694CB;
     }
@@ -98,8 +81,10 @@ body {
     }
 
     .call-to-action-button:hover {
-      background-color: #333;
-      color: #fff;
+      background-color: #ffffff;
+      color: #5694CB;
+      border-color: #333;
+      border-radius: 2px  ;
     }
 
     .right-column img {
@@ -107,6 +92,9 @@ body {
       height: auto;
       border-radius: 5px;
     }
+
+ 
+
   </style>
 </head>
 <body>
@@ -123,21 +111,20 @@ body {
     </div>
   </div>
 
-  <section>
-
-  </section>
-
 
   <section>
     <div class="left-column">
-      <p style="font-size: 40px;">Alexander Buss</p>
-      <p style="font-size: 20px; font-family: cursive;">topschnitt</p>
-      <p style="font-size: 14px; line-height: 1.5;">I'm a developer, I do things. With great interest<br> I'm introducing myself to do the change management<br>for german <br>Text line 4<br></p>
+      <p style="font-size: 60px;">Alexander Buss</p>
+      <p style="font-size: 30px; font-style: italic; font-family: Verdana;">topschnitt</p>
+      <p style="font-size: 20px; line-height: 1.5; font-family: Verdana;">I'm a developer, I do things. With great interest<br> I'm introducing myself to do the change management<br>for german <br>Text line 4<br></p>
       <div class="social-icons">
         <!-- Replace the placeholder URLs with your actual social media icons -->
-        <img src="Icons\email.png" alt="Social Icon 1">
-        <img src="Icons\github.png" alt="Social Icon 2">
-        <img src="Icons\website.png" alt="Social Icon 3">
+        <a href="https://github.com/topschnitt">
+          <img src="Icons\email.png" alt="Social Icon 1"></a>
+          <a href="https://github.com/topschnitt">
+            <img src="Icons\github.png" alt="Social Icon 2"></a>
+            <a href="https://github.com/topschnitt">
+              <img src="Icons\website.png" alt="Social Icon 3"></a>
       </div>
       <button class="call-to-action-button">Call to Action</button>
     </div>
@@ -154,14 +141,17 @@ body {
   <!-- New Section -->
   <section>
     <div class="left-column">
-      <p style="font-size: 40px;">Name</p>
-      <p style="font-size: 20px; font-family: cursive;">Nickname</p>
-      <p style="font-size: 14px; line-height: 1.5;">Text line 1<br>Text line 2<br>Text line 3<br>Text line 4</p>
+      <p style="font-size: 40px; font-family: Verdana">Name</p>
+      <p style="font-size: 20px; font-family: Verdana; font-family: cursive;">Nickname</p>
+      <p style="font-size: 14px; line-height: 1.5; font-family: Verdana;">Text line 1<br>Text line 2<br>Text line 3<br>Text line 4</p>
       <div class="social-icons">
         <!-- Replace the placeholder URLs with your actual social media icons -->
-        <img src="path/to/social-icon1.png" alt="Social Icon 1">
-        <img src="path/to/social-icon2.png" alt="Social Icon 2">
-        <img src="path/to/social-icon3.png" alt="Social Icon 3">
+        <a href="https://github.com/topschnitt">
+          <img src="path/to/social-icon1.png" alt="Social Icon 1"></a>
+          <a href="https://github.com/topschnitt">
+            <img src="path/to/social-icon2.png" alt="Social Icon 2"></a>
+          <a href="https://github.com/topschnitt">
+        <img src="path/to/social-icon3.png" alt="Social Icon 3"></a>
       </div>
       <button class="call-to-action-button">Call to Action</button>
     </div>
@@ -185,6 +175,7 @@ body {
         <img src="path/to/social-icon2.png" alt="Social Icon 2">
         <img src="path/to/social-icon3.png" alt="Social Icon 3">
       </div>
+      <div style="margin-top: 20px;"></div>
       <button class="call-to-action-button">Call to Action</button>
     </div>
     <div class="right-column">
