@@ -2,75 +2,75 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="global.css">
-  <link rel="stylesheet" href="banner.css">
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="background.css">
-  <script>
-    function load_section(id) {
-      var xhttp = new XMLHttpRequest();
-      xhttp.open("GET", "section.html", false);
-      xhttp.send();
-      var sectionHtml = xhttp.responseText;
-      document.getElementById(id).innerHTML = sectionHtml;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="background.css">
+    <script>
+        function load_section(id) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "section.html", false);
+            xhttp.send();
+            var sectionHtml = xhttp.responseText;
+            document.getElementById(id).innerHTML = sectionHtml;
+        }
 
-    function load_background_css(id, bgColor1, bgColor2, fontColor = "#000") {
-      var xhttp = new XMLHttpRequest();
-      xhttp.open("GET", "background.css", false);
-      xhttp.send();
-      var backgroundCss = xhttp.responseText;
-      var className = "background-" + id;
-      backgroundCss = backgroundCss.replaceAll("animated-container", className);
-      backgroundCss = backgroundCss.replace("#ffffff", bgColor1);
-      backgroundCss = backgroundCss.replace("#419db9", bgColor2);
-      backgroundCss = backgroundCss.replace("#000", fontColor);
-      const style = document.createElement('style');
-      style.innerHTML = backgroundCss;
-      document.head.appendChild(style);
-      document.getElementById(id).classList.add(className);
-    }
+        function load_background_css(id, bgColor1, bgColor2, fontColor = "#000") {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "background.css", false);
+            xhttp.send();
+            var backgroundCss = xhttp.responseText;
+            var className = "background-" + id;
+            backgroundCss = backgroundCss.replaceAll("animated-container", className);
+            backgroundCss = backgroundCss.replace("#ffffff", bgColor1);
+            backgroundCss = backgroundCss.replace("#419db9", bgColor2);
+            backgroundCss = backgroundCss.replace("#000", fontColor);
+            const style = document.createElement('style');
+            style.innerHTML = backgroundCss;
+            document.head.appendChild(style);
+            document.getElementById(id).classList.add(className);
+        }
 
-  </script>
+    </script>
 
 </head>
 
 <body>
-  <div id="navbar_and_banner">
-    <script>load_background_css("navbar_and_banner", "#d1f009", "#419db9", "#001a33");</script>
+    <div id="navbar_and_banner">
+<script>load_background_css("navbar_and_banner", "#d1f009", "#419db9", "#001a33");</script>
 
-    <div class="navbar-section" id="navbar">
-      <div class="navbar-logo">
-        <img src="logo - Kopie.png" alt="Your Logo">
-      </div>
-      <div class="navbar-buttons navbar-menu">
-        <a href="#" class="button">Education</a>
-        <a href="#" class="button">Experience</a>
-        <a href="#" class="button">Projects</a>
-        <a href="#" class="button">Contact</a>
-      </div>
+        <div class="navbar-section" id="navbar">
+            <div class="navbar-logo">
+                <img src="" alt="Your Logo">
+            </div>
+            <div class="navbar-buttons navbar-menu">
+                <a href="#" class="button">Education</a>
+                <a href="#" class="button">Experience</a>
+                <a href="#" class="button">Projects</a>
+                <a href="#" class="button">Contact</a>
+            </div>
+        </div>
+
+        <div class="banner-section" id="banner">
+            <div class="banner-column"></div>
+            <div class="banner-content">
+                <h1>Project Name</h1>
+                <h2>Subtitle of the project</h2>
+            </div>
+            <div class="banner-image">
+                <img src="sample.png" alt="Description of the image">
+            </div>
+            <div class="banner-column"></div>
+        </div>
     </div>
 
-    <div class="banner-section" id="banner">
-      <div class="banner-column"></div>
-      <div class="banner-content">
-        <h1>Project Name</h1>
-        <h2>Subtitle of the project</h2>
-      </div>
-      <div class="banner-image">
-        <img src="/path/to/your/image.jpg" alt="Description of the image">
-      </div>
-      <div class="banner-column"></div>
+    <div id="section1">
+        <script>
+            load_section("section1");
+            load_background_css("section1", "#ffffff", "#008000", "#001a33");
+        </script>
     </div>
-  </div>
-
-  <div id="section1">
-    <script>
-      load_section("section1");
-      load_background_css("section1", "#ffffff", "#008000", "#001a33");
-    </script>
-  </div>
 
 </body>
