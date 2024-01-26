@@ -10,5 +10,5 @@ jobs:
       - name: 'remove old files'
         run: sudo rm -rf /var/www/html/CV
       - name: 'move html files'
-        run: sudo mv CV /var/www/html
+        run: sudo mv CV/CV /var/www/html
 
