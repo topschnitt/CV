@@ -3,101 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-    <style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
 
-
-.container {
-  position: fixed;
-  font-family: 'Verdana', sans-serif;
-  top: 0;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Updated grid template columns */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for separation */
-}
-
-.logo {
-  padding: 5px;
-  padding-left: 100px;
-  height: 40px;
-  align-self: left;
-}
-
-.buttons {
-  display: flex;
-  margin-right: 100px;
-  justify-content: flex-end; /* Align the menu to the right */
-  gap: 1px; /* Add some space between menu items */
-}
-
-.menu .button {
-  color: #333;
-  text-decoration: none;
-  font-size: 20px; /* Doubled font size */
-  font-family: 'Verdana', sans-serif;
-  padding: 20px 20px; /* Doubled button size */
-}
-
-.menu .button:hover {
-  color: #fff;
-  background-color: #5694CB;
-}
-
-section {
-      font-family: 'Verdana', sans-serif;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px; /* Add some space between the columns */
-      margin-top: 40px; /* Adjust as needed */
-    }
-
-    .left-column {
-      margin-left: 120px;
-      color: #5694CB;
-    }
-
-    .social-icons {
-      display: flex;
-      gap: 10px;
-    }
-
-    .social-icons img {
-      width: 48px; /* Adjust the size as needed */
-      height: 48px;
-      border-radius: 50%;
-    }
-
-    .call-to-action-button {
-      padding: 15px 20px;
-      font-size: 18px;
-      background-color: #5694CB;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    .call-to-action-button:hover {
-      background-color: #ffffff;
-      color: #5694CB;
-      border-color: #333;
-      border-radius: 2px  ;
-    }
-
-    .right-column img {
-      max-width: 100%; /* Ensure the image does not exceed its container */
-      height: auto;
-      border-radius: 5px;
-    }
-
-
-
- 
-
-  </style>
 </head>
 <body>
     
@@ -113,12 +21,13 @@ section {
     </div>
   </div>
 
+  
 
   <section>
     <div class="left-column">
       <p style="font-size: 60px;">Alexander Buss</p>
       <p style="font-size: 30px; font-style: italic; font-family: Verdana;">topschnitt</p>
-      <p style="font-size: 20px; line-height: 1.5; font-family: Verdana;">I'm a developer, I do things. With great interest<br> I'm introducing myself to do the change management<br>for german <br>Text line 4<br></p>
+      <p style="font-size: 20px; line-height: 1.5; font-family: Verdana;">I'm a developer, I do things. With great interest<br> I'm introducing myself <br>for  <br>Text line 4<br></p>
       <div class="social-icons">
         <!-- Replace the placeholder URLs with your actual social media icons -->
         <a href="https://github.com/topschnitt">
@@ -155,6 +64,52 @@ section {
   <section id="contact-section">
     <!-- Content for the contact section -->
   </section>
+
+  <section class="section">
+    <div class="column">
+        <img src="your-image.jpg" alt="Description">
+    </div>
+    <div class="new-container">
+        <div class="container">
+            <!-- First row (headline) -->
+            <div class="row">
+                <h2>Your Headline</h2>
+            </div>
+
+            <!-- Second row (list of icons) -->
+            <div class="row icon-list">
+                <i class="icon">Icon 1</i>
+                <i class="icon">Icon 2</i>
+                <i class="icon">Icon 3</i>
+                <i class="icon">Icon 4</i> <!-- Additional icons -->
+                <i class="icon">Icon 5</i>
+                <i class="icon">Icon 6</i>
+            </div>
+
+            <!-- Third row (list of bullet points) -->
+            <ul class="row bullet-points">
+                <li>Bullet Point 1</li>
+                <li>Bullet Point 2</li>
+                <li>Bullet Point 3</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+  <section class="section">
+    <!-- First column with picture -->
+    <div class="column">
+        <img src="logo.png" alt="Description">
+    </div>
+    
+    <!-- Second column with new container -->
+    <div class="new-container">
+        <!-- Content for the new container goes here -->
+        <div class="container">
+            <!-- Your content goes here -->
+        </div>
+    </div>
+</section>
 
   
     <section>
