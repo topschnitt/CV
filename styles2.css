@@ -1,0 +1,184 @@
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Section styles */
+.section {
+    height: 800px;
+    border-left: 120px solid #333; /* 120px side border */
+    display: flex;
+}
+
+/* First column (for the picture) */
+.column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Second column (new container) */
+.new-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Set background color as needed */
+}
+
+
+/* Keyframes for animation */
+@keyframes swipeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Updated Container styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    animation: swipeIn 1s ease-out; /* Apply the animation to the whole container */
+}
+
+/* First row (headline) */
+.row h2 {
+    font-family: 'Your Pretty Font', sans-serif;
+    /* Add other styling as needed */
+}
+
+/* Second row (list of icons) */
+.row.icon-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.row.icon-list i {
+    /* Add styling for icons */
+}
+
+/* Third row (list of bullet points) */
+.row.bullet-points {
+    list-style: none;
+    padding: 0;
+}
+
+.row.bullet-points li {
+    margin-bottom: 10px;
+}
+
+/* Apply animation to each row individually */
+.row {
+    animation: swipeIn 1s ease-out;
+}
+
+
+/* Additional styles for new icons */
+.row.icon-list i:nth-child(4),
+.row.icon-list i:nth-child(5),
+.row.icon-list i:nth-child(6) {
+    /* Add styles for additional icons */
+}
+
+/* Keyframes for individual icon animation */
+@keyframes flyIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for specific icon2 rotation animation */
+@keyframes rotateIcon2 {
+    0% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Updated container hover animation */
+.container:hover .row.icon-list i:nth-child(1) {
+    animation: flyIn 0.5s ease forwards;
+}
+
+.container:hover .row.icon-list i:nth-child(2) {
+    animation: flyIn 0.5s ease forwards 0.1s; /* Delayed animation */
+}
+
+.container:hover .row.icon-list i:nth-child(3) {
+    animation: flyIn 0.5s ease forwards 0.2s; /* Delayed animation */
+}
+
+.container:hover .row.icon-list i:nth-child(4) {
+    animation: flyIn 0.5s ease forwards 0.3s; /* Delayed animation */
+}
+
+.container:hover .row.icon-list i:nth-child(5) {
+    animation: flyIn 0.5s ease forwards 0.4s; /* Delayed animation */
+}
+
+.container:hover .row.icon-list i:nth-child(6) {
+    animation: flyIn 0.5s ease forwards 0.5s; /* Delayed animation */
+}
+
+.container:hover .row.icon-list i:nth-child(2) {
+    animation: rotateIcon2 0.5s ease forwards;
+}
+
+.banner-section {
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+  }
+
+  .banner-column {
+    flex-basis: 20%;
+  }
+
+  .banner-content {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-content h1, .banner-content h2 {
+    text-align: center;
+  }
+
+  .banner-image {
+    flex-basis: 40%;
+    display: flex;
+    justify-content:center;
+    align-items:center
+  }
+
+  .banner-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
