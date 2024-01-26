@@ -22,7 +22,7 @@
       xhttp.send();
       var backgroundCss = xhttp.responseText;
       var className = "background-" + id;
-      backgroundCss = backgroundCss.replace("animated-container", className);
+      backgroundCss = backgroundCss.replaceAll("animated-container", className);
       backgroundCss = backgroundCss.replace("#ffffff", bgColor1);
       backgroundCss = backgroundCss.replace("#419db9", bgColor2);
       backgroundCss = backgroundCss.replace("#000", fontColor);
@@ -48,7 +48,7 @@
       <a href="#" class="button">Projects</a>
       <a href="#" class="button">Contact</a>
     </div>
-    <script>load_background_css("navbar", "#ffffff", "#309db9", "#001a33");</script>
+    <script>load_background_css("navbar", "#ffffff", "#309db9", "#000");</script>
   </div>
 
   <div class="banner-section" id="banner">
@@ -61,13 +61,13 @@
       <img src="/path/to/your/image.jpg" alt="Description of the image">
     </div>
     <div class="banner-column"></div>
-    <script>load_background_css("banner", "#ffffff", "#999bd0", "#001a33");</script>
+    <script>load_background_css("banner", "#ffffff", "#999bd0", "#000");</script>
   </div>
 
   <div id="section1">
     <script>
       load_section("section1");
-      load_background_css("section1", "#ffffff", "#008000", "#001a33");
+      load_background_css("section1", "#bb4400", "#008000", "#fff");
     </script>
   </div>
 

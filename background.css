@@ -14,7 +14,8 @@
   }
 }
 
-.animated-container h1,
+.animated-container h1, h2, h3, h4, h5, h6,
+p, li, a, span, .button, .to
 p {
   /* Text color on the gradient background */
   color: #000;
