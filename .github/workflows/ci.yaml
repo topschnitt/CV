@@ -1,13 +1,14 @@
 name: Docker Compose Actions Workflow
 on: 
   push:
-    branches: [main, refactor]
+    branches: [main]
 jobs:
   build:
     runs-on: Linux
     steps:
-      - name: 'Cleanup build folder'
-        run: sudo rm -rf dialogmanager-backend
       - uses: actions/checkout@v2 
-      - name: Build the Docker Containers
-        run: cd dialogmanager-backend && sudo docker-compose up -d --build
+      - name: 'remove old files'
+        run: sudo rm -rf /var/www/html/CV
+      - name: 'move html files'
+        run: sudo mv CV /var/www/html
+
