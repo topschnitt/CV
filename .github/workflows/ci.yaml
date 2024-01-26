@@ -1,4 +1,4 @@
-name: Docker Compose Actions Workflow
+name: Move html files workflow
 on: 
   push:
     branches: [main]
@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: Linux
     steps:
-      - uses: actions/checkout@v2 
+      - uses: actions/checkout@v3 
       - name: 'remove old files'
         run: sudo rm -rf /var/www/html/CV
       - name: 'move html files'
