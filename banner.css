@@ -43,19 +43,19 @@
 
 
 
-.navbar-social-icons {
+.banner-social-icons {
     display: flex;
     gap: 10px;
 }
 
-.navbar-social-icons img {
+.banner-social-icons img {
     width: 48px;
     /* Adjust the size as needed */
     height: 48px;
     border-radius: 50%;
 }
 
-.navbar-call-to-action-button {
+.banner-call-to-action-button {
     padding: 15px 20px;
     font-size: 18px;
     background-color: #5694CB;
@@ -66,7 +66,7 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar-call-to-action-button:hover {
+.banner-call-to-action-button:hover {
     background-color: #ffffff;
     color: #5694CB;
     border-color: #333;
