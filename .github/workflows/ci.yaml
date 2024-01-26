@@ -11,5 +11,3 @@ jobs:
         run: sudo rm -rf /var/www/html/CV
       - name: 'move html files'
         run: sudo mv ~/actions-runner/_work/CV/CV /var/www/html
-
-# comment
