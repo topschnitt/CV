@@ -6,8 +6,6 @@ jobs:
   build:
     runs-on: Linux
     steps:
-      - name: 'Cleanup build folder'
-        run: sudo rm -rf CV
-      - uses: actions/checkout@v2 
+      - uses: actions/checkout@v3
       - name: Build the Docker Containers
-        run: cd CV && sudo docker-compose up -d --build
+        run: sudo docker compose up -d --build

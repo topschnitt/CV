@@ -11,4 +11,4 @@ services:
       - ./html:/var/www/html
       - ./build/php-apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
       - ./build/php-apache/local.ini:/usr/local/etc/php/conf.d/local.ini
-      - ./build/php-apache/ssl:/etc/apache2/ssl
+      - /home/topi/certs:/etc/apache2/ssl
