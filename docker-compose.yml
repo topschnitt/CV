@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  php-apache:
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+    build: './build/php-apache'
+    volumes:
+      - ./html:/var/www/html
+      - ./build/php-apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
+      - ./build/php-apache/local.ini:/usr/local/etc/php/conf.d/local.ini
+      - ./build/php-apache/ssl:/etc/apache2/ssl
