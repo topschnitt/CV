@@ -1,0 +1,94 @@
+.navbar-container {
+    position: fixed;
+    font-family: 'Verdana', sans-serif;
+    top: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Updated grid template columns */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow for separation */
+}
+
+.navbar-logo {
+    padding: 5px;
+    padding-left: 100px;
+    height: 40px;
+    align-self: left;
+}
+
+.navbar-buttons {
+    display: flex;
+    margin-right: 100px;
+    justify-content: flex-end;
+    /* Align the menu to the right */
+    gap: 1px;
+    /* Add some space between menu items */
+}
+
+.navbar-menu .button {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    /* Doubled font size */
+    font-family: 'Verdana', sans-serif;
+    padding: 20px 20px;
+    /* Doubled button size */
+}
+
+.navbar-menu .button:hover {
+    color: #fff;
+    background-color: #5694CB;
+}
+
+.navbar-section {
+    font-family: 'Verdana', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* Add some space between the columns */
+    margin-top: 40px;
+    /* Adjust as needed */
+}
+
+.navbar-left-column {
+    margin-left: 120px;
+    color: #5694CB;
+}
+
+.navbar-social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-social-icons img {
+    width: 48px;
+    /* Adjust the size as needed */
+    height: 48px;
+    border-radius: 50%;
+}
+
+.navbar-call-to-action-button {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #5694CB;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-call-to-action-button:hover {
+    background-color: #ffffff;
+    color: #5694CB;
+    border-color: #333;
+    border-radius: 2px;
+}
+
+.right-column img {
+    max-width: 100%;
+    /* Ensure the image does not exceed its container */
+    height: auto;
+    border-radius: 5px;
+}
