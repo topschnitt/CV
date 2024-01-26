@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="banner.css">
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="background.css">
-  <script>
-  function load_section(e) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "section.html", false);
-    xhttp.send();
-    document.getElementById("section1").innerHTML = xhttp.responseText;
-  }
 
-  </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="background.css">
+    <script>
+        function load_section(id) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "section.html", false);
+            xhttp.send();
+            var sectionHtml = xhttp.responseText;
+            document.getElementById(id).innerHTML = sectionHtml;
+        }
+
+        function load_background_css(id, bgColor1, bgColor2, fontColor = "#000") {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "background.css", false);
+            xhttp.send();
+            var backgroundCss = xhttp.responseText;
+            var className = "background-" + id;
+            backgroundCss = backgroundCss.replace("animated-container", className);
+            backgroundCss = backgroundCss.replace("#ffffff", bgColor1);
+            backgroundCss = backgroundCss.replace("#419db9", bgColor2);
+            backgroundCss = backgroundCss.replace("#000", fontColor);
+            const style = document.createElement('style');
+            style.innerHTML = backgroundCss;
+            document.head.appendChild(style);
+            document.getElementById(id).classList.add(className);
+        }
+
+    </script>
 
 </head>
 
 <body>
+    <div id="navbarbanner">
 
-    <div class="navbar-section">
-        <div class="navbar-logo">
-            <img src="logo - Kopie.png" alt="Your Logo">
+
+        <div class="navbar-section" id="navbar">
+            <div class="navbar-logo">
+                <img src="logo - Kopie.png" alt="Your Logo">
+            </div>
+            <div class="navbar-buttons navbar-menu">
+                <a href="#" class="button">Education</a>
+                <a href="#" class="button">Experience</a>
+                <a href="#" class="button">Projects</a>
+                <a href="#" class="button">Contact</a>
+            </div>
         </div>
-        <div class="navbar-buttons navbar-menu">
-          <a href="#" class="button">Education</a>
-          <a href="#" class="button">Experience</a>
-          <a href="#" class="button">Projects</a>
-          <a href="#" class="button">Contact</a>
+
+        <div class="banner-section" id="banner">
+            <div class="banner-column"></div>
+            <div class="banner-content">
+                <h1>Project Name</h1>
+                <h2>Subtitle of the project</h2>
+            </div>
+            <div class="banner-image">
+                <img src="/path/to/your/image.jpg" alt="Description of the image">
+            </div>
+            <div class="banner-column"></div>
         </div>
-      </div>
-    
 
-
-      <div class="animated-container">
-        <h1>Your Content Goes Hereeeeee!!!</h1>
-        <p>Any additional content you want to include.</p>
+        <script>load_background_css("navbarbanner", "#d2ff09", "#419db9", "#001a33");</script>
     </div>
-
-    
-  <div class="banner-section">
-    <div class="banner-column"></div>
-    <div class="banner-content">
-      <h1>Project Name</h1>
-      <h2>Subtitle of the project</h2>
-    </div>
-    <div class="banner-image">
-      <img src="/path/to/your/image.jpg" alt="Description of the image">
-    </div>
-    <div class="banner-column"></div>
-  </div>
 
     <div id="section1">
         <script>
-        load_section();
+            load_section("section1");
+            load_background_css("section1", "#ffffff", "#008000", "#001a33");
         </script>
-      </div>
+    </div>
 
 </body>
