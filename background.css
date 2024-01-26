@@ -1,30 +1,21 @@
+.animated-container {
+  background: linear-gradient(to right, #ffffff, #419db9);
+  /* Gradient background */
+  animation: bg-pan-left 8s infinite alternate;
+}
 
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      overflow: hidden; /* Prevent scrolling to see the full effect */
-    }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
-    .animated-container {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(to right, #ffffff, #419db9); /* Gradient background */
-      animation: bg-pan-left 8s infinite alternate;
-    }
-
-    @keyframes bg-pan-left {
-      0% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    h1, p {
-      color: #fff; /* Text color on the gradient background */
-    }
+.animated-container h1,
+p {
+  /* Text color on the gradient background */
+  color: #000;
+}

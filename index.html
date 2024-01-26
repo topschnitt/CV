@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,36 @@
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="background.css">
   <script>
-  function load_section(e) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "section.html", false);
-    xhttp.send();
-    document.getElementById("section1").innerHTML = xhttp.responseText;
-  }
+    function load_section(id) {
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "section.html", false);
+      xhttp.send();
+      var sectionHtml = xhttp.responseText;
+      document.getElementById(id).innerHTML = sectionHtml;
+    }
+
+    function load_background_css(id, bgColor1, bgColor2, fontColor = "#000") {
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "background.css", false);
+      xhttp.send();
+      var backgroundCss = xhttp.responseText;
+      var className = "background-" + id;
+      backgroundCss = backgroundCss.replace("animated-container", className);
+      backgroundCss = backgroundCss.replace("#ffffff", bgColor1);
+      backgroundCss = backgroundCss.replace("#419db9", bgColor2);
+      backgroundCss = backgroundCss.replace("#000", fontColor);
+      const style = document.createElement('style');
+      style.innerHTML = backgroundCss;
+      document.head.appendChild(style);
+      document.getElementById(id).classList.add(className);
+      // var sectionCss = "background: linear-gradient(to right, #color1, #color2);\n"
+      // sectionCss += "animation: bg-pan-left 8s infinite alternate;\n"
+      // console.log(sectionCss)
+      // sectionCss = sectionCss.replace("#color1", bgColor1);
+      // sectionCss = sectionCss.replace("#color2", bgColor2);
+      // console.log(sectionCss)
+      // var element = document.getElementById(id);
+    }
 
   </script>
 
@@ -20,27 +45,20 @@
 
 <body>
 
-    <div class="navbar-section">
-        <div class="navbar-logo">
-            <img src="logo - Kopie.png" alt="Your Logo">
-        </div>
-        <div class="navbar-buttons navbar-menu">
-          <a href="#" class="button">Education</a>
-          <a href="#" class="button">Experience</a>
-          <a href="#" class="button">Projects</a>
-          <a href="#" class="button">Contact</a>
-        </div>
-      </div>
-    
-
-
-      <div class="animated-container">
-        <h1>Your Content Goes Hereeeeee!!!</h1>
-        <p>Any additional content you want to include.</p>
+  <div class="navbar-section" id="navbar">
+    <div class="navbar-logo">
+      <img src="logo - Kopie.png" alt="Your Logo">
     </div>
+    <div class="navbar-buttons navbar-menu">
+      <a href="#" class="button">Education</a>
+      <a href="#" class="button">Experience</a>
+      <a href="#" class="button">Projects</a>
+      <a href="#" class="button">Contact</a>
+    </div>
+    <script>load_background_css("navbar", "#ffffff", "#309db9", "#001a33");</script>
+  </div>
 
-    
-  <div class="banner-section">
+  <div class="banner-section" id="banner">
     <div class="banner-column"></div>
     <div class="banner-content">
       <h1>Project Name</h1>
@@ -50,12 +68,14 @@
       <img src="/path/to/your/image.jpg" alt="Description of the image">
     </div>
     <div class="banner-column"></div>
+    <script>load_background_css("banner", "#ffffff", "#999bd0", "#001a33");</script>
   </div>
 
-    <div id="section1">
-        <script>
-        load_section();
-        </script>
-      </div>
+  <div id="section1">
+    <script>
+      load_section("section1");
+      load_background_css("section1", "#ffffff", "#008000", "#001a33");
+    </script>
+  </div>
 
 </body>
