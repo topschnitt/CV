@@ -4,6 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles3.css">
+  <script>
+  function load_section(e) {
+    (e || window.event).preventDefault();
+
+    fetch("section.html" /*, options */)
+    .then((response) => response.text())
+    .then((html) => {
+        document.getElementById("section1").innerHTML = html;
+    })
+    .catch((error) => {
+        console.warn(error);
+    });
+}
+  </script>
 
 </head>
 <body>
@@ -57,55 +71,10 @@
     </div>
   </section>
 
+  <div id="section1">
+    <script>load_section();</script>
+  </div>
 
-
-
-  <section id="education-section">
-    <!-- Content for the education section -->
-  </section>
-  
-    <section id="experience-section">
-      <!-- Content for the experience section -->
-    </section>
-  
-  <section id="projects-section">
-    <!-- Content for the projects section -->
-  </section>
-  
-  <section id="contact-section">
-    <!-- Content for the contact section -->
-  </section>
-
-  <section class="section">
-    <div class="column">
-        <img src="your-image.jpg" alt="Description">
-    </div>
-    <div class="new-container">
-        <div class="container">
-            <!-- First row (headline) -->
-            <div class="row">
-                <h2>Your Headline</h2>
-            </div>
-
-            <!-- Second row (list of icons) -->
-            <div class="row icon-list">
-                <i class="icon">Icon 1</i>
-                <i class="icon">Icon 2</i>
-                <i class="icon">Icon 3</i>
-                <i class="icon">Icon 4</i> <!-- Additional icons -->
-                <i class="icon">Icon 5</i>
-                <i class="icon">Icon 6</i>
-            </div>
-
-            <!-- Third row (list of bullet points) -->
-            <ul class="row bullet-points">
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
-            </ul>
-        </div>
-    </div>
-</section>
 
   <section class="section">
     <!-- First column with picture -->
