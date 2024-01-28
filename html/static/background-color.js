@@ -1,4 +1,4 @@
-<script>
+
 function load_section(id) {
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "section.html", false);
@@ -23,4 +23,3 @@ function load_background_css(id, bgColor1, bgColor2, fontColor = "#000") {
     document.getElementById(id).classList.add(className);
 }
 
-</script>
