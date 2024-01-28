@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: copy html css
-        run: cp -r html/* /home/topi/CV/html
+        run: cp -rf html/* /home/topi/CV/html
 
