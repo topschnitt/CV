@@ -24,7 +24,7 @@
             var backgroundCss = xhttp.responseText;
             var className = "background-" + id;
             backgroundCss = backgroundCss.replaceAll("animated-container", className);
-            backgroundCss = backgroundCss.replace("#ffffff", bgColor1);
+            backgroundCss = backgroundCss.replace("#5694CB", bgColor1);
             backgroundCss = backgroundCss.replace("#419db9", bgColor2);
             backgroundCss = backgroundCss.replace("#000", fontColor);
             const style = document.createElement('style');
@@ -39,7 +39,7 @@
 
 <body>
     <div id="navbar_and_banner">
-<script>load_background_css("navbar_and_banner", "#ffffff", "#419db9", "#001a33");</script>
+<script>load_background_css("navbar_and_banner", "#5694CB", "#419db9", "#001a33");</script>
 
         <div class="navbar-section" id="navbar">
             <div class="navbar-logo">
@@ -69,7 +69,7 @@
     <div id="section1">
         <script>
             load_section("section1");
-            load_background_css("section1", "#ffffff", "#419db9", "#001a33");
+            load_background_css("section1", "#5694CB", "#419db9", "#001a33");
         </script>
     </div>
 
