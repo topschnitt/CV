@@ -2,7 +2,7 @@
 
 .banner-section {
     display: flex;
-    height: 80vh;
+    height: 800px;
     justify-content: space-between;
 }
 
@@ -25,6 +25,7 @@
 .banner-image {
     padding-top: 200;
     flex-basis: 40%;
+    display: flex;
     justify-content:center;
     align-items:center;
 }
