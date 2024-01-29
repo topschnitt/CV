@@ -23,9 +23,8 @@
 }
 
 .banner-image {
-    margin-top: 200;
+    padding-top: 200;
     flex-basis: 40%;
-    display: flex;
     justify-content:center;
     align-items:center;
 }
