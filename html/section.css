@@ -1,4 +1,5 @@
 .unique-main-section {
+    padding-top: 40px;
     height: 800px;
     display: flex;
     justify-content: center;
@@ -9,7 +10,7 @@
   .unique-columns {
     display: flex;
     gap: 40px;
-    width: 80%; /* Set the width of the columns to 80% */
+    width: 90%; /* Set the width of the columns to 80% */
     margin: 0 auto; /* Center the columns on the screen */
   }
 
@@ -55,7 +56,6 @@
   }
 
   .unique-text-box {
-    max-width: flex;
     margin-top: 20px;
   }
 
