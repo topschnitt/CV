@@ -1,5 +1,5 @@
 .navbar-section {
-    position: fixed;
+    position: sticky;
     font-family: 'Verdana', sans-serif;
     top: 0;
     width: 100%;
