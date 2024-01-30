@@ -55,7 +55,7 @@
   }
 
   .unique-text-box {
-    max-width: 300px;
+    max-width: flex;
     margin-top: 20px;
   }
 
