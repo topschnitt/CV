@@ -9,7 +9,7 @@ function load_section(id) {
 
 function load_background_css(id, bgColor1, bgColor2, fontColor = "#000") {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "static/background.css", false);
+    xhttp.open("GET", "styles/background.css", false);
     xhttp.send();
     var backgroundCss = xhttp.responseText;
     var className = "background-" + id;
