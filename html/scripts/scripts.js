@@ -1,7 +1,7 @@
 
 function load_section(id) {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "section.html", false);
+    xhttp.open("GET","sections/" + id + ".html" , false);
     xhttp.send();
     var sectionHtml = xhttp.responseText;
     document.getElementById(id).innerHTML = sectionHtml;
