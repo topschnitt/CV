@@ -93,6 +93,7 @@
   .unique-icon-box {
     height: 60px;
     width: auto;
+    padding-top: 10px;
     margin: 0 5px;
     opacity: 0; /* Start with opacity 0 to hide icons initially */
     transform: translateX(-400px) rotate(-540deg);

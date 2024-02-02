@@ -1,9 +1,11 @@
 .navbar-section {
     position: sticky;
     font-family: 'Verdana', sans-serif;
+    z-index: 5;
     top: 0;
     width: 100%;
     display: grid;
+    background: linear-gradient(to right, #ffffff, #419db9);
     grid-template-columns: 1fr 1fr;
     /* Updated grid template columns */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
