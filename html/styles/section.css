@@ -22,6 +22,40 @@
     align-items: center;
     background-color: #f0f0f0;
   }
+  .design {
+    padding-top: 40px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  .coding{
+    padding-top: 40px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  .data-and-cloud{
+    padding-top: 40px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }  
+  .misc{
+    padding-top: 40px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+
 
   .unique-columns {
     display: flex;
@@ -44,6 +78,8 @@
     transform: translateX(50px);
     animation: slowly-appear 1s ease-in-out forwards;
   }
+
+
 
   .unique-container h1 {
     margin-bottom: 20px;
