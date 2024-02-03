@@ -1,27 +1,4 @@
-.section-type-one {
-    padding-top: 40px;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-  }
-  .section-type-two {
-    padding-top: 40px;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-  }
-  .unique-main-section {
-    padding-top: 40px;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-  }
+
   .design {
     padding-top: 40px;
     height: 800px;
@@ -69,15 +46,22 @@
     flex-shrink: 0; /* Prevent the columns from shrinking */
   }
 
-  .unique-container {
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Start with opacity 0 to hide icons initially */
-    transform: translateX(50px);
-    animation: slowly-appear 1s ease-in-out forwards;
+  .unique-icon-box {
+    height: 60px;
+    width: auto;
+    padding-top: 10px;
+    margin: 0 5px;
+    opacity: 0;
+    transform: translateX(-400px) rotate(-540deg);
+    animation: roll-in-left 2s ease-in-out forwards;
+    
+    @for $i from 2 through 10 {
+      &:nth-child(#{$i}) {
+        animation-delay: 0.1s * ($i - 1);
+      }
+    }
   }
+  
 
 
 
