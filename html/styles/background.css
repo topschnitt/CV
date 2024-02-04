@@ -2,6 +2,7 @@
   background: linear-gradient(to right, #ffffff, #419db9);
   /* Gradient background */
   animation: bg-pan-left 8s infinite alternate;
+  padding-bottom: 100;
 }
 
 @keyframes bg-pan-left {

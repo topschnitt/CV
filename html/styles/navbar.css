@@ -1,7 +1,7 @@
-.navbar-section {
+.navbar{
     position: sticky;
     font-family: 'Verdana', sans-serif;
-    z-index: 5;
+    z-index: 2;
     top: 0;
     width: 100%;
     display: grid;

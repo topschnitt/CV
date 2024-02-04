@@ -28,23 +28,4 @@ function load_background_css(id, bgColor1, bgColor2, fontColor = "#000") {
     element.style.animation = 'slowly-appear 1s ease-in-out forwards';
   }
 
-  // Wait for the DOM to be ready
-  document.addEventListener('DOMContentLoaded', function() {
-    // Select the element
-    var uniqueContainer = document.querySelector('.unique-container');
 
-    // Add animation when the element is in the viewport
-    window.addEventListener('scroll', function() {
-      var boundingBox = uniqueContainer.getBoundingClientRect();
-      var isInViewport = (
-        boundingBox.top >= 0 &&
-        boundingBox.left >= 0 &&
-        boundingBox.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        boundingBox.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-
-      if (isInViewport) {
-        addAnimation(uniqueContainer);
-      }
-    });
-  });
