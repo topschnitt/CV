@@ -5,12 +5,12 @@
     top: 0;
     width: 100%;
     display: grid;
-    background: linear-gradient(to right, #ffffff, #419db9);
+    background: linear-gradient(to right, #2e6f95,#2e6f95);
     grid-template-columns: 1fr 1fr;
     /* Updated grid template columns */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Add a subtle shadow for separation */
-}
+}   
 
 .navbar-logo {
     padding: 5px;
@@ -39,6 +39,6 @@
 }
 
 .navbar-menu .button:hover {
-    background-color: #5694CB;
+    background-color: #0091ad;
 }
 
