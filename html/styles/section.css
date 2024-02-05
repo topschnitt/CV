@@ -7,21 +7,21 @@
     background: linear-gradient(to right, #ffffff, #419db9);
   }
   .coding{
-    padding-top: 100px;
+    padding-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #419db9, #ffffff);
   }
   .data-and-cloud{
-    padding-top: 100px;
+    padding-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #ffffff, #419db9);
   }  
   .misc{
-    padding-top: 100px;
+    padding-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +31,8 @@
 
 
   .unique-columns {
+    padding-top: 100px;
+
     display: flex;
     justify-content: center;
     align-items: center;
