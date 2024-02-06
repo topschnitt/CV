@@ -81,6 +81,12 @@
     
 
   }
+
+  .disclaimer-text-container{
+    padding-top: 100px;
+    align-items: center;
+  }
+
   
   .unique-container h1 {
     margin-bottom: 60px;
@@ -255,5 +261,5 @@
   }
   
   figcaption:hover {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add a text shadow on caption hover */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth opacity transition on hover */
   }
