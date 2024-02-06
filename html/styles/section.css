@@ -192,9 +192,68 @@
 
   }
 
-  .unique-image-container {
-    max-height: 100%;
 
+
+
+
+
+  .image-container .img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition on hover */
+    max-height: 800px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  
+  .image-link {
+    text-decoration: none;
+    scale:(1.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-link:hover {
+    color: blue;
+  }
+  
 
-    
+  
+  .image-link:hover img {
+    transform: scale(1.03); /* Increase the size of the image on hover */
+  }
+  
+  .image-figure {
+    text-align: center;
+  }
+  
+  figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    opacity: 0; /* Initially set caption opacity to 0 */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth opacity transition on hover */
+  }
+  
+  .image-link:hover figcaption {
+    opacity: 1; /* Make the caption appear on hover */
+  }
+  
+  figcaption::before {
+    content: '\2022'; /* Add a bullet point before each caption */
+    color: blue; /* Set the bullet point color */
+    margin-right: 5px;
+  }
+  
+  figcaption:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add a text shadow on caption hover */
+  }
