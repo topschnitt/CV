@@ -1,0 +1,90 @@
+
+
+  .education-section {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin: 0px 20px;
+    position: relative;
+  }
+
+  .dot-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #888;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #888;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  .dot:nth-child(odd) {
+    animation: animateCardLeft 1s forwards;
+  }
+
+  .dot:nth-child(even) {
+    animation: animateCardRight 1s forwards;
+  }
+
+  @keyframes animateCardLeft {
+    0% {
+      left: -50px;
+      opacity: 0;
+    }
+    100% {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes animateCardRight {
+    0% {
+      right: -50px;
+      opacity: 0;
+    }
+    100% {
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  .education-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .education-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .time-window {
+    background-color: #888;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .education-card:nth-child(even) {
+    margin-right: 50px; /* Offset for even cards */
+  }
