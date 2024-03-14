@@ -7,12 +7,14 @@
     display: grid;
     background: linear-gradient(to right, #2e6f95,#2e6f95);
     grid-template-columns: 1fr 1fr;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }   
 
 .navbar-logo {
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 100px;
-    height: 40px;
+    height: 60px;
     align-self: left;
 }
 
@@ -20,19 +22,17 @@
     display: flex;
     margin-right: 100px;
     justify-content: flex-end;
-    /* Align the menu to the right */
     gap: 1px;
-    /* Add some space between menu items */
 }
 
 .navbar-menu .button {
+    color: hsl(0 0% 90%);
     text-decoration: none;
     font-size: 20px;
     font-family: 'Verdana', sans-serif;
-    padding: 20px 20px;
+    padding: 20px 20px; 
 }
 
 .navbar-menu .button:hover {
-    background-color: #1780a1;
+    background-color: hsl(200 60% 40%);
 }
-

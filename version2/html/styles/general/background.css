@@ -1,5 +1,5 @@
 .animated-container {
-  background: radial-gradient( #ffffff, #419db9);
+  background: radial-gradient(#ff0000, #ff0001);
   /* Gradient background */
   animation: bg-pan-left 8s infinite alternate;
   padding-bottom: 100;
@@ -7,10 +7,10 @@
 
 @keyframes bg-pan-left {
   0% {
-    background-position: 200px -400px;
+    background-position: -400px -200px;
   }
   100% {
-    background-position: -400px 200px;
+    background-position: 200px 400px;
   }
 }
 
@@ -18,5 +18,5 @@
 p, li, a, span, .button, .to
 p {
   /* Text color on the gradient background */
-  color: #000;
+  color: black;
 }

@@ -1,0 +1,166 @@
+body{
+      margin: 0;
+  padding: 0;
+}
+
+    .containerX {
+      padding-top: 200px;
+      padding-bottom: 100px;
+      display: grid;
+      grid-template-columns: 1fr 3.8fr 0.4fr 3.8fr 1fr;
+      column-gap: 10px;
+    }
+
+    .leftContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .rightContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .bottomBar {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .bottomLink {
+      color: white;
+      text-decoration: none;
+    }
+
+.wrapper{
+  font-family: Courier New, monospace;
+      display: flex;
+  align-items: center;
+  justify-content: right;
+  min-height: 100px;
+  width: 800px;
+  background: #1780a1;
+
+
+}
+.wrapper .static-txt{
+  color: #455E89;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts .lii{
+  list-style: none;
+  color: white;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -340px;
+  }
+}
+.dynamic-txts .lii .sspan{
+  position: relative;
+  margin: 5px 0;
+  line-height: 80px;
+  top: 0;
+}
+.dynamic-txts .lii .sspan::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #1780a1;
+  border-left: 2px solid #892B64;
+  ;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60%{
+    left: calc(100% + 5px);
+  }
+  100%{
+    left: 0;
+  
+  }
+}
+
+.right {
+  display:flex;
+  justify-content: right;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    justify-self: right;
+  }
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #B7094C, #A01A58, #892B64, #723C70, #5C4D7D, #455E89, #2E6F95, #1780A1, #0091AD);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

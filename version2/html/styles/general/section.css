@@ -1,0 +1,329 @@
+
+.design {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ff0000, #ff0001);
+}
+.coding{
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #419db9, #ffffff);
+}
+.data-and-cloud{
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ffffff, #419db9);
+}  
+.misc{
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #419db9, #ffffff);
+}
+
+
+
+.unique-columns {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 90%; /* Set the width of the columns to 80% */
+  padding-bottom: 100px;
+  padding-left: 5%;
+}
+
+.unique-column {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.0);
+  color: white;
+  align-items: right; 
+  flex: 1;
+  flex-shrink: 0; /* Prevent the columns from shrinking */
+}
+
+.unique-column-left {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  opacity: 50%;
+  align-items: right; 
+  flex: 1;
+  flex-shrink: 0; /* Prevent the columns from shrinking */
+}
+
+.unique-column-right {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  opacity: 50%;
+  align-items: left; 
+  flex: 1;
+  flex-shrink: 0; /* Prevent the columns from shrinking */
+}
+
+.unique-icon-box {
+  height: 60px;
+  width: auto;
+  padding-top: 10px;
+  margin: 0 5px;
+  opacity: 0;
+  transform: translateX(-400px) rotate(-540deg);
+  animation: roll-in-left 2s ease-in-out forwards;
+  align-self: right;
+  
+
+}
+
+.disclaimer-text-container{
+  padding-top: 100px;
+  align-items: center;
+}
+
+
+
+.unique-container h1 {
+  color: white;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateX(-400px) rotate(-540deg);
+  animation: slide-in-left 2s ease-in-out forwards;
+  display: flex;
+  justify-content: left;;
+}
+
+.unique-container-right h1 {
+  color: white;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateX(-400px) rotate(-540deg);
+  animation: slide-in-left 2s ease-in-out forwards;
+  display: flex;
+  justify-content: right;
+}
+
+.unique-icon-container {
+  justify-content: right;
+  display: flex;
+  overflow: hidden; /* Ensures the row of icons doesn't overflow */
+}
+
+.unique-icon-container-left {
+  justify-content: left;
+  display: flex;
+  overflow: hidden; /* Ensures the row of icons doesn't overflow */
+}
+
+.unique-icon-box {
+  justify-self: right;
+  height: 60px;
+  width: auto;
+  padding-top: 10px;
+  margin: 0 5px;
+  opacity: 0; /* Start with opacity 0 to hide icons initially */
+  transform: translateX(-400px) rotate(-540deg);
+  animation: roll-in-left 2s ease-in-out forwards;
+
+}
+
+
+
+@keyframes slowly-appear {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes roll-in-left {
+  0% {
+    transform: translateX(-400px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+  .unique-icon-box-two {
+      height: 60px;
+      width: auto;
+      margin: 0 5px;
+      opacity: 0; /* Start with opacity 0 to hide icons initially */
+      transform: translateX(-400px);
+      animation: slide-in-left 2s ease-in-out forwards;
+      padding-bottom: 60px;
+
+    }
+  
+@keyframes slide-in-left{
+  0% {
+      transform: translateX(-400px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+
+  }
+  
+
+
+
+  .unique-text-box {
+    padding: 2px;
+    font-family: "Lucida Console";  
+    font-size: 20px;
+  }
+
+  .unique-text-box-right {
+    justify-content: right;
+    padding: 2px;
+    font-family: "Lucida Console";  
+    font-size: 20px;
+  }
+
+  .unique-text-line-1 {
+    opacity: 0;
+    animation: slowly-appear 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    font-weight: 100;
+
+  }
+
+  .unique-text-line-2 {
+    opacity: 0;
+    animation: slowly-appear 1s ease-in-out forwards;
+    animation-delay: 1s;
+    padding-bottom: 20px;
+  }
+
+  .unique-text-line-3 {
+    opacity: 0;
+    animation: slowly-appear 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+    padding-bottom: 20px;
+
+  }
+
+  .unique-text-line-4 {
+    opacity: 0;
+    animation: slowly-appear 1s ease-in-out forwards;
+    animation-delay: 2s;
+    padding-bottom: 40px;
+
+  }
+
+  .unique-text-line-5 {
+    opacity: 0;
+    animation: slowly-appear 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    padding-bottom: 20px;
+    font-weight: 100;
+    text-align: right;
+    padding-top: 60px;
+
+
+  }
+
+  .unique-text-line-6 {
+    opacity: 0;
+    animation: slowly-appear 1s ease-in-out forwards;
+    animation-delay: 1s;
+    padding-bottom: 20px;
+    font-weight: 100;
+    text-align: right;
+
+  }
+
+  .unique-text-line-7 {
+    opacity: 0;
+    animation: slowly-appear 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+    padding-bottom: 20px;
+    font-weight: 100;
+    text-align: right;
+
+  }
+
+  .unique-text-line-8 {
+    opacity: 0;
+    animation: slowly-appear 1s ease-in-out forwards;
+    animation-delay: 2s;
+    padding-bottom: 20px;
+    font-weight: 100;
+    text-align: right;
+
+  }
+
+
+
+
+
+
+.image-container .img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #333;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition on hover */
+  max-height: 800px;
+  min-height: 400px;
+  display: flex;
+  align-items: right;
+  justify-self: flex-end;
+}
+
+.image-link {
+  text-decoration: none;
+  scale:(1.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.image-link:hover {
+  color: blue;
+}
+
+
+
+.image-link:hover img {
+  transform: scale(1.03); /* Increase the size of the image on hover */
+  border-radius: 100px;
+}
+
+.image-figure {
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: black;
+  transition: opacity 0.2s ease-out; /* Add a smooth opacity transition on hover */
+}
+
