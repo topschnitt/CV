@@ -9,14 +9,14 @@ function load_section(id) {
 
 function load_background_css(id, bgColor1, bgColor2, fontColor = "#000") {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "styles/general/background.css", false);
+    xhttp.open("GET", "styles/background.css", false);
     xhttp.send();
     var backgroundCss = xhttp.responseText;
     var className = "background-" + id;
     backgroundCss = backgroundCss.replaceAll("animated-container", className);
-    backgroundCss = backgroundCss.replace("#ff0000", bgColor1);
-    backgroundCss = backgroundCss.replace("#ff0001", bgColor2);
-    backgroundCss = backgroundCss.replace("##ff0002", fontColor);
+    backgroundCss = backgroundCss.replace("#ffffff", bgColor1);
+    backgroundCss = backgroundCss.replace("#419db9", bgColor2);
+    backgroundCss = backgroundCss.replace("#000", fontColor);
     const style = document.createElement('style');
     style.innerHTML = backgroundCss;
     document.head.appendChild(style);
